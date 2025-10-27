@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Mapa – Układanka</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+<h1>Mapa – Układanka</h1>
+
+<div id="container">
+    <!-- Sekcja 1: Mapa dynamiczna -->
+    <div id="map-section">
+        <h2>Mapa</h2>
+        <div id="map"></div>
+        <button id="locateBtn"> Moja lokalizacja</button>
+        <button id="downloadBtn"> Pobierz mapę</button>
+    </div>
+
+    <!-- Sekcja 2: Podgląd (canvas) -->
+    <div id="canvas-section">
+        <h2>Podgląd mapy</h2>
+        <canvas id="mapCanvas" width="400" height="400"></canvas>
+    </div>
+
+    <!-- Sekcja 3: Puzzle -->
+    <div id="puzzle-section">
+        <h2>Układanka</h2>
+        <div id="puzzle-board"></div>
+    </div>
+</div>
+
+<!--  Kolejność ładowania skryptów ma znaczenie -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!--  Działająca wersja leaflet-image z JSDelivr -->
+<script src="https://cdn.jsdelivr.net/gh/mapbox/leaflet-image/leaflet-image.js"></script>
+
+<!-- Twój własny skrypt -->
+<script src="script.js"></script>
+</body>
+</html>
